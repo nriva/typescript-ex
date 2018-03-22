@@ -1,5 +1,6 @@
 class Prova {
   private _a : number;
+  private _b : string;
 
   set a(value:number)
   {
@@ -11,10 +12,5 @@ class Prova {
   }
 }
 
-
 let x = new Prova();
 x.a = 10;
-
-// Declare a tuple type
-let tuple: [string, number];
-tuple = ["hello", x.a]; // OK

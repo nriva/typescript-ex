@@ -1,8 +1,8 @@
-interface LabelledValue {
+export interface LabeledValue {
     label: string;
 }
 
-function printLabel(labelledObj: LabelledValue) {
+function printLabel(labelledObj: LabeledValue) {
     console.log(labelledObj.label);
 }
 

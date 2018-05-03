@@ -1,6 +1,6 @@
 class Prova {
-  private _a : number;
-  private _b : string;
+  private _a : number=0;
+  private _b : string="";
 
   set a(value:number)
   {
@@ -9,6 +9,12 @@ class Prova {
 
   get a() {
     return this._a;
+  }
+
+  Prova(a:number,b:string)
+  {
+    this._a = a;
+    this._b = b;
   }
 }
 

@@ -1,6 +1,10 @@
+import {LabeledValue} from '../interface/interface'
+
 class Prova {
   private _a : number=0;
   private _b : string="";
+
+  private lv : LabeledValue = {label:""};
 
   set a(value:number)
   {
@@ -11,12 +15,23 @@ class Prova {
     return this._a;
   }
 
-  Prova(a:number,b:string)
+  set label(value:string)
   {
-    this._a = a;
-    this._b = b;
+    this.lv.label = value;
+  }
+
+  toString()
+  {
+    if(this.lv && this.lv.label && this.lv.label!="")
+      return this.lv.label + " : " + this._a;
+
+    return this._a;
   }
 }
 
 let x = new Prova();
 x.a = 10;
+
+x.label = "Label";
+
+console.log(x.toString());

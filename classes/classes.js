@@ -1,6 +1,10 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Prova = /** @class */ (function () {
     function Prova() {
+        this._a = 0;
+        this._b = "";
+        this.lv = { label: "" };
     }
     Object.defineProperty(Prova.prototype, "a", {
         get: function () {
@@ -12,7 +16,21 @@ var Prova = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(Prova.prototype, "label", {
+        set: function (value) {
+            this.lv.label = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Prova.prototype.toString = function () {
+        if (this.lv && this.lv.label && this.lv.label != "")
+            return this.lv.label + " : " + this._a;
+        return this._a;
+    };
     return Prova;
 }());
 var x = new Prova();
 x.a = 10;
+x.label = "Label";
+console.log(x.toString());

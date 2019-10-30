@@ -1,18 +1,17 @@
 {
-    // Usare IntelliSense per informazioni sui possibili attributi.
-    // Al passaggio del mouse vengono visualizzate le descrizioni degli attributi esistenti.
-    // Per ulteriori informazioni, visitare: https://go.microsoft.com/fwlink/?linkid=830387
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch current file w/ ts-node",
-            "protocol": "inspector",
-            "args": ["${relativeFile}"],
-            "cwd": "${workspaceRoot}",
-            "runtimeArgs": ["-r", "ts-node/register"],
-            "internalConsoleOptions": "openOnSessionStart"
-          }
+            "name": "Launch Basic Ex",
+            "program": "${workspaceFolder}\\basic\\basic.js",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        }
     ]
 }

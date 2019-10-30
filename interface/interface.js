@@ -23,3 +23,4 @@ console.log(p1.x);
 var square = {};
 square.color = "blue";
 square.sideLength = 10;
+//# sourceMappingURL=interface.js.map

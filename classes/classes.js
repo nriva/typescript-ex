@@ -34,3 +34,4 @@ var x = new Prova();
 x.a = 10;
 x.label = "Label";
 console.log(x.toString());
+//# sourceMappingURL=classes.js.map

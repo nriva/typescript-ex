@@ -13,13 +13,13 @@
                 "kind": "build",
                 "isDefault": true
             }
-
         },
         {
             "type": "typescript",
-            "tsconfig": "gulp-ex/tsconfig.json",
+            "tsconfig": "tsconfig.json",
+            "option": "watch",
             "problemMatcher": [
-                "$tsc"
+                "$tsc-watch"
             ],
             "group": "build"
         }
